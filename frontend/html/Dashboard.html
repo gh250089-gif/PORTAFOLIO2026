@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard | Sistema INEB</title>
+
+    <link rel="stylesheet" href="../css/dashboard.css">
+
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+
+</head>
+
+
+<body>
+
+
+<div class="contenedor">
+
+
+
+    <!-- MENU LATERAL -->
+
+    <aside class="sidebar">
+
+
+        <div class="logo">
+
+
+            <img src="../img/Logo.png" alt="Logo INEB">
+
+
+            <h2>INEB</h2>
+
+
+        </div>
+
+
+
+
+        <ul>
+
+
+            <li class="activo" id="inicio">
+
+                <i class="fa-solid fa-house"></i>
+
+                <span>Inicio</span>
+
+            </li>
+
+
+
+
+            <li id="alumnos">
+
+                <i class="fa-solid fa-user-graduate"></i>
+
+                <span>Alumnos</span>
+
+            </li>
+
+
+
+
+
+            <li id="docentes">
+
+                <i class="fa-solid fa-chalkboard-user"></i>
+
+                <span>Docentes</span>
+
+            </li>
+
+
+
+
+
+            <li id="asistencia">
+
+                <i class="fa-solid fa-qrcode"></i>
+
+                <span>Asistencia QR</span>
+
+            </li>
+
+
+
+
+
+            <li id="reportes">
+
+                <i class="fa-solid fa-chart-column"></i>
+
+                <span>Reportes</span>
+
+            </li>
+
+
+
+
+
+            <li id="salir">
+
+                <i class="fa-solid fa-right-from-bracket"></i>
+
+                <span>Cerrar sesión</span>
+
+            </li>
+
+
+
+        </ul>
+
+
+    </aside>
+
+
+
+
+
+    <!-- CONTENIDO PRINCIPAL -->
+
+
+    <main class="contenido">
+
+
+
+
+
+        <!-- BARRA SUPERIOR -->
+
+
+        <header class="topbar">
+
+
+            <h1>
+                Sistema de Control de Asistencia QR
+            </h1>
+
+
+
+
+            <div class="usuario">
+
+
+                <i class="fa-solid fa-user"></i>
+
+
+                <span>
+                    Administrador
+                </span>
+
+
+            </div>
+
+
+        </header>
+
+
+
+
+
+
+
+        <!-- TARJETAS -->
+
+
+        <section class="cards">
+
+
+
+            <div class="card">
+
+
+                <i class="fa-solid fa-user-graduate"></i>
+
+
+                <h3>
+                    Alumnos
+                </h3>
+
+
+                <p>
+                    250
+                </p>
+
+
+            </div>
+
+
+
+
+
+            <div class="card">
+
+
+                <i class="fa-solid fa-chalkboard-user"></i>
+
+
+                <h3>
+                    Docentes
+                </h3>
+
+
+                <p>
+                    18
+                </p>
+
+
+            </div>
+
+
+
+
+
+            <div class="card">
+
+
+                <i class="fa-solid fa-calendar-check"></i>
+
+
+                <h3>
+                    Asistencias
+                </h3>
+
+
+                <p>
+                    120
+                </p>
+
+
+            </div>
+
+
+
+
+
+            <div class="card">
+
+
+                <i class="fa-solid fa-file-lines"></i>
+
+
+                <h3>
+                    Reportes
+                </h3>
+
+
+                <p>
+                    12
+                </p>
+
+
+            </div>
+
+
+
+        </section>
+
+
+
+
+
+
+
+        <!-- PANEL DINAMICO -->
+
+
+        <section class="panel" id="contenido">
+
+
+            <h2>
+                Bienvenido al Sistema
+            </h2>
+
+
+
+            <p>
+                Seleccione una opción del menú para comenzar.
+            </p>
+
+
+
+        </section>
+
+
+
+
+
+    </main>
+
+
+</div>
+
+
+
+
+
+
+<!-- LOADER CERRAR SESIÓN -->
+
+
+<div id="loader" class="loader">
+
+
+    <div class="spinner"></div>
+
+
+    <p>
+        Cerrando sesión...
+    </p>
+
+
+</div>
+
+
+
+
+
+
+
+<script src="../js/dashboard.js"></script>
+
+
+</body>
+
+
+</html>

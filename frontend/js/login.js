@@ -1,15 +1,22 @@
 const formulario = document.getElementById("formLogin");
 
 
+
 formulario.addEventListener("submit",(e)=>{
 
 
     e.preventDefault();
 
 
-    const usuario = document.getElementById("usuario").value.trim();
 
-    const password = document.getElementById("password").value.trim();
+    const usuario =
+    document.getElementById("usuario").value.trim();
+
+
+
+    const password =
+    document.getElementById("password").value.trim();
+
 
 
 
@@ -25,13 +32,25 @@ formulario.addEventListener("submit",(e)=>{
 
 
 
-    alert("Bienvenido " + usuario);
+
+    const loader =
+    document.getElementById("loader");
 
 
 
-    console.log("Usuario:",usuario);
+    loader.style.display="flex";
 
-    console.log("Contraseña:",password);
+
+
+
+
+    setTimeout(()=>{
+
+
+        window.location.href="Dashboard.html";
+
+
+    },2000);
 
 
 
@@ -41,22 +60,28 @@ formulario.addEventListener("submit",(e)=>{
 
 
 
-// MOSTRAR CONTRASEÑA
+
+// MOSTRAR / OCULTAR PASSWORD
 
 
-const togglePassword = document.getElementById("togglePassword");
+const togglePassword =
+document.getElementById("togglePassword");
 
-const password = document.getElementById("password");
+
+
+const passwordInput =
+document.getElementById("password");
+
 
 
 
 togglePassword.addEventListener("click",()=>{
 
 
-    if(password.type === "password"){
+    if(passwordInput.type==="password"){
 
 
-        password.type="text";
+        passwordInput.type="text";
 
 
         togglePassword.classList.remove("fa-eye");
@@ -64,10 +89,11 @@ togglePassword.addEventListener("click",()=>{
         togglePassword.classList.add("fa-eye-slash");
 
 
+
     }else{
 
 
-        password.type="password";
+        passwordInput.type="password";
 
 
         togglePassword.classList.remove("fa-eye-slash");
